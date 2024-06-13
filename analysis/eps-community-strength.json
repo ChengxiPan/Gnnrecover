@@ -1,0 +1,78 @@
+{
+    "0.02": {
+        "modularity": 0.9981564610981959,
+        "intra_cluster_density": 906.1289377289378
+    },
+    "0.03": {
+        "modularity": 0.9950750931976667,
+        "intra_cluster_density": 668.381801511257
+    },
+    "0.01": {
+        "modularity": 0.9992242031967985,
+        "intra_cluster_density": 408.1666666666667
+    },
+    "0.04": {
+        "modularity": 0.9795494195216685,
+        "intra_cluster_density": 355.97127486531383
+    },
+    "0.05": {
+        "modularity": 0.9480471820590631,
+        "intra_cluster_density": 149.80555945310212
+    },
+    "0.060000000000000005": {
+        "modularity": 0.8777722208621058,
+        "intra_cluster_density": 101.16198232688514
+    },
+    "0.06999999999999999": {
+        "modularity": 0.8540997417091666,
+        "intra_cluster_density": 62.99128113163208
+    },
+    "0.08": {
+        "modularity": 0.7773157808421615,
+        "intra_cluster_density": 56.36129298605716
+    },
+    "0.09": {
+        "modularity": 0.7542093172279075,
+        "intra_cluster_density": 50.00767322926893
+    },
+    "0.09999999999999999": {
+        "modularity": 0.7532682111450467,
+        "intra_cluster_density": 36.17676457132963
+    },
+    "0.11": {
+        "modularity": 0.717265498855772,
+        "intra_cluster_density": 22.665043785749972
+    },
+    "0.12": {
+        "modularity": 0.7094260373704238,
+        "intra_cluster_density": 21.9667620237217
+    },
+    "0.13": {
+        "modularity": 0.6803561516643399,
+        "intra_cluster_density": 18.60348129226658
+    },
+    "0.14": {
+        "modularity": 0.6316426153059618,
+        "intra_cluster_density": 16.99463117981871
+    },
+    "0.15000000000000002": {
+        "modularity": 0.6301417240940411,
+        "intra_cluster_density": 14.903634233559611
+    },
+    "0.16": {
+        "modularity": 0.6369935577048683,
+        "intra_cluster_density": 12.111451081997773
+    },
+    "0.17": {
+        "modularity": 0.6332584410879549,
+        "intra_cluster_density": 8.606694673035916
+    },
+    "0.19": {
+        "modularity": 0.6259094220571643,
+        "intra_cluster_density": 3.7577726964812466
+    },
+    "0.18000000000000002": {
+        "modularity": 0.6221624319762081,
+        "intra_cluster_density": 5.717115247693385
+    }
+}
