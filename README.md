@@ -1,2 +1,2 @@
 # Gnnrecover
-Continuing research after THSIS
+Continuing research after THESIS
