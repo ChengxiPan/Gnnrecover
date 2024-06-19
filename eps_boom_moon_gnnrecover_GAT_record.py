@@ -9,7 +9,7 @@ import torch.optim as optim
 from torch_geometric.data import Data
 from tqdm.auto import tqdm
 from scipy.linalg import orthogonal_procrustes
-from util import GIN, GAT, dG, moon
+from util import Net, GIN, GAT, moon, stationary, reconstruct, dG
 import argparse
 import json
 
@@ -20,7 +20,7 @@ import json
 #     args = parser.parse_args()
 #     return args
 
-def main(epsilon):
+def get_GAT_loss(epsilon):
     n = 2000
     m = 0
 
@@ -40,7 +40,7 @@ def main(epsilon):
     y = torch.tensor(y, dtype=torch.long).to(device)
     edges = torch.tensor(edges, dtype=torch.long).t().contiguous()
 
-    #%%
+    #%%~
     # Initialize model and optimizer
     net = GAT(m).to(device)
     optimizer = optim.Adam(net.parameters(), lr=0.001)
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     
     pbar = tqdm(eps_range)
     for eps in pbar:
-        loss = main(eps)
+        loss = get_GAT_loss(eps)
         losses.append(loss)
         description = f'Epsilon {eps}, Loss: {float(loss)}'
         pbar.set_description(description)    
@@ -84,3 +84,4 @@ if __name__ == "__main__":
     plt.plot(losses)
     plt.grid(True)
     plt.savefig("./imgs/eps-gnnrecover_loss.png")
+# %%
